@@ -1,0 +1,16 @@
+{
+  "apps" : [
+    {
+      "id" : "color",
+      "name" : "Color Mixer",
+      "img" : "",
+      "summary" : ""
+    },
+    {
+      "id" : "foo",
+      "name" : "Foobar",
+      "img" : "",
+      "summary" : "Lorem impsum dolor sit amed"
+    }
+  ]
+}
