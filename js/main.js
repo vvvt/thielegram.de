@@ -7,23 +7,23 @@ $(() => {
       }});
   }
 
-  $('#but_prog').click(function(){
+  $('#nav_prog').click(function(){
     getContent('/api/prog');
   });
 
-  $('#but_cv').click(function(){
+  $('#nav_cv').click(function(){
     getContent('/api/cv');
   });
 
-  $('#but_music').click(function(){
+  $('#nav_music').click(function(){
     getContent('/api/music');
   });
 
-  $('#but_art').click(function(){
+  $('#nav_art').click(function(){
     getContent('/api/art');
   });
 
-  $('#but_back').click(function(){
+  $('#nav_back').click(function(){
     getContent('/api/back');
   });
 
