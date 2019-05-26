@@ -3,25 +3,16 @@ const fs = require('fs');
 
 let app = express();
 
-
-app.get('/hello', function (req, res) {
-  res.send('<html><body><h1>Hello World</h1></body></html>');
-});
-
-app.get('/api/color', (req, res) => {
-  res.sendFile('html/color.html', {root: __dirname });
-});
-
 app.get('/api/code', (req, res) => {
-  res.send('Code');
+  res.send('html/code.html');
 });
 
 app.get('/api/cv', (req, res) => {
-  res.send('CV');
+  res.send('html/cv.html');
 });
 
 app.get('/api/music', (req, res) => {
-  res.send('Music');
+  res.send('html/music.html');
 });
 
 app.get('/api/art', (req, res) => {
@@ -29,7 +20,7 @@ app.get('/api/art', (req, res) => {
 });
 
 app.get('/api/back', (req, res) => {
-  res.send('Test');
+  res.sendFile('index.html', {root: __dirname });
 });
 
 
