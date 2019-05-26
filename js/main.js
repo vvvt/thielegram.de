@@ -24,7 +24,7 @@ $(() => {
   });
 
   $('#nav_back').click(function(){
-    getContent('/api/back');
+    getContent('/api/color');
   });
 
 

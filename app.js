@@ -8,8 +8,8 @@ app.get('/hello', function (req, res) {
   res.send('<html><body><h1>Hello World</h1></body></html>');
 });
 
-app.get('/color', (req, res) => {
-  res.send('<html><body><h1>Color Widget</h1></body></html>');
+app.get('/api/color', (req, res) => {
+  res.sendFile('html/color.html', {root: __dirname });
 });
 
 app.get('/api/prog', (req, res) => {
