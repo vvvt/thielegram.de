@@ -12,7 +12,7 @@ app.get('/api/color', (req, res) => {
   res.sendFile('html/color.html', {root: __dirname });
 });
 
-app.get('/api/prog', (req, res) => {
+app.get('/api/code', (req, res) => {
   res.send('Code');
 });
 

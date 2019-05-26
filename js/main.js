@@ -7,7 +7,7 @@ $(() => {
       }});
   }
 
-  $('#nav_prog').click(function(){
+  $('#nav_code').click(function(){
     getContent('/api/code');
   });
 
