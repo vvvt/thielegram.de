@@ -25,7 +25,7 @@ app.get('/api/music', (req, res) => {
 });
 
 app.get('/api/art', (req, res) => {
-  res.send('Art');
+  res.sendFile('html/art.html', {root: __dirname });
 });
 
 app.get('/api/back', (req, res) => {
