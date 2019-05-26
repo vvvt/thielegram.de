@@ -8,7 +8,7 @@ $(() => {
   }
 
   $('#nav_prog').click(function(){
-    getContent('/api/prog');
+    getContent('/api/code');
   });
 
   $('#nav_cv').click(function(){

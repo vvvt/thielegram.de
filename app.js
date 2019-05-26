@@ -13,7 +13,7 @@ app.get('/color', (req, res) => {
 });
 
 app.get('/api/prog', (req, res) => {
-  res.send('Programming');
+  res.send('Code');
 });
 
 app.get('/api/cv', (req, res) => {
