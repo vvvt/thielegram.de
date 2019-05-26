@@ -4,15 +4,15 @@ const fs = require('fs');
 let app = express();
 
 app.get('/api/code', (req, res) => {
-  res.send('html/code.html');
+  res.sendFile('html/code.html', {root: __dirname });
 });
 
 app.get('/api/cv', (req, res) => {
-  res.send('html/cv.html');
+  res.sendFile('html/cv.html', {root: __dirname });
 });
 
 app.get('/api/music', (req, res) => {
-  res.send('html/music.html');
+  res.sendFile('html/music.html', {root: __dirname });
 });
 
 app.get('/api/art', (req, res) => {
