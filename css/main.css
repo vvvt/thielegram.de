@@ -162,7 +162,7 @@ article {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 70vw;
     margin: 0;
