@@ -97,16 +97,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* Variables */
+
+:root {
+    --color-primary-light: #28C3FD;
+    --color-primary-dark: #6524E3;
+    --color-secondary-light: #FBF14E;
+    --color-secondary-dark: #E38924;
+}
+
+/* Styles */
+
 body {
-  background-color: #eee;
-  color: black;
+  color: var(--color-secondary-dark);
   font-family: 'Open Sans', 'Arial', sans-serif
 }
 
 main {
-    margin: 0 15vw;
-    padding: 20px;
-    background-color: #fff;
+    margin: 0;
+    padding: 20px 15vw;
+    background-color: var(--color-secondary-light);
 }
 
 ul {
@@ -114,7 +125,7 @@ ul {
     margin: 0;
     padding: 0 15vw;
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--color-primary-dark);
 }
 
 li  {
@@ -123,7 +134,7 @@ li  {
 
 .nav-item {
     display: block;
-    color: white;
+    color: var(--color-primary-light);
     text-align: center;
     padding: 14px 16px;
 
@@ -133,7 +144,8 @@ li  {
 }
 
 .nav-item:hover {
-    background-color: #b3d4fc;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark)
 }
 
 .social {
@@ -154,11 +166,23 @@ footer {
     bottom: 0;
     width: 70vw;
     margin: 0;
-    color: white;
     padding: 1vh 15vw;
     overflow: hidden;
+    
     font-size: 20px;
-    background-color: #333;
+    color: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
+}
+
+table {
+    border-spacing: 0;
+}
+
+td {
+    border-top: var(--color-secondary-dark) 1px solid;
+    padding: 30px;
+    vertical-align: top;
+    margin: none;
 }
 
 
