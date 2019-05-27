@@ -20,7 +20,7 @@ app.get('/api/art', (req, res) => {
 });
 
 app.get('/api/home', (req, res) => {
-  res.sendFile('index.html', {root: __dirname });
+  res.sendFile('html/home.html', {root: __dirname });
 });
 
 app.get('/api/imprint', (req, res) => {

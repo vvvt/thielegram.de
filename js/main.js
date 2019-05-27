@@ -7,6 +7,10 @@ $(() => {
       }});
   }
 
+  $( document ).ready(function() {
+    getContent('/api/home');
+  });
+
   $('#nav_code').click(function(){
     getContent('/api/code');
   });
