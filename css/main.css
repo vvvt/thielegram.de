@@ -100,13 +100,13 @@ textarea {
 body {
   background-color: #eee;
   color: black;
+  font-family: 'Open Sans', 'Arial', sans-serif
 }
 
 main {
     margin: 0 15vw;
     padding: 20px;
     background-color: #fff;
-    font-family: 'Open Sans', 'Arial', sans-serif
 }
 
 ul {
@@ -138,20 +138,29 @@ li  {
 
 .social {
     float: right;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
 }
 
 .social-img {
-    align-self: center;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 
 article {
     width: 60%;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 70vw;
+    margin: 0;
+    color: white;
+    padding: 1vh 15vw;
+    overflow: hidden;
+    font-size: 20px;
+    background-color: #333;
+}
+
 
 
 /* ==========================================================================
