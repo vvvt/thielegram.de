@@ -2,6 +2,7 @@
   "name": "thielegram",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.19.1"
   }
 }
