@@ -23,8 +23,12 @@ $(() => {
     getContent('/api/art');
   });
 
-  $('#nav_back').click(function(){
-    getContent('/api/color');
+  $('#nav_home').click(function(){
+    getContent('/api/home');
+  });
+
+  $('#nav_imprint').click(function(){
+    getContent('/api/imprint');
   });
 
 

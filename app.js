@@ -19,8 +19,12 @@ app.get('/api/art', (req, res) => {
   res.sendFile('html/art.html', {root: __dirname });
 });
 
-app.get('/api/back', (req, res) => {
+app.get('/api/home', (req, res) => {
   res.sendFile('index.html', {root: __dirname });
+});
+
+app.get('/api/imprint', (req, res) => {
+  res.sendFile('html/imprint.html', {root: __dirname });
 });
 
 
