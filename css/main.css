@@ -192,8 +192,8 @@ td {
 }
 
 .gallery-wrapper {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .gallery {
