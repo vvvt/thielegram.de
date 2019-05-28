@@ -199,6 +199,8 @@ td {
 .gallery {
     width: 60%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .gallery-object {
