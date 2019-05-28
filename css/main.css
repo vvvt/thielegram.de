@@ -113,8 +113,6 @@ body {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
     overflow: hidden;
     margin: 0;
     padding: 20px 15vw;
@@ -193,11 +191,14 @@ td {
     margin: none;
 }
 
-#gallery {
-    width: 60%;
-    display: flex;
+.gallery-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.gallery {
+    width: 60%;
+    display: flex;
 }
 
 .gallery-object {
