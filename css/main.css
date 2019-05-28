@@ -101,23 +101,24 @@ textarea {
 /* Variables */
 
 :root {
-    --color-primary-light: #28C3FD;
-    --color-primary-dark: #6524E3;
-    --color-secondary-light: #FBF14E;
-    --color-secondary-dark: #E38924;
+    --color-primary-dark: #333;
+    --color-primary-light: #FFF;
 }
 
 /* Styles */
 
 body {
-  color: var(--color-secondary-dark);
-  font-family: 'Open Sans', 'Arial', sans-serif
+  color: var(--color-primary-dark);
+  font-family: 'Roboto', 'Arial', sans-serif
 }
 
 main {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
     margin: 0;
     padding: 20px 15vw;
-    background-color: var(--color-secondary-light);
+    background-color: var(--color-primary-light);
 }
 
 ul {
@@ -125,7 +126,8 @@ ul {
     margin: 0;
     padding: 0 15vw;
     overflow: hidden;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-light);
+    border-bottom: var(--color-primary-dark) solid 1px;
 }
 
 li  {
@@ -138,18 +140,18 @@ a {
 
 .nav-item {
     display: block;
-    color: var(--color-primary-light);
+    color: var(--color-primary-dark);
     text-align: center;
     padding: 14px 16px;
 
-    font-family: 'Cabin', Arial, sans-serif;
+    font-family: 'Bree Serif', Arial, sans-serif;
     font-size: 30px;
     text-decoration: none;
 }
 
 .nav-item:hover {
-    background-color: var(--color-primary-light);
-    color: var(--color-primary-dark)
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-light)
 }
 
 .social {
@@ -172,10 +174,12 @@ footer {
     margin: 0;
     padding: 1vh 15vw;
     overflow: hidden;
-    
+
+    border-top: var(--color-primary-dark) 1px solid;
+    font-family: 'Bree Serif', Arial, sans-serif;
     font-size: 20px;
-    color: var(--color-primary-light);
-    background-color: var(--color-primary-dark);
+    color: var(--color-primary-dark);
+    background-color: var(--color-primary-light);
 }
 
 table {
@@ -183,10 +187,45 @@ table {
 }
 
 td {
-    border-top: var(--color-secondary-dark) 1px solid;
+    border-top: var(--color-primary-dark) 1px solid;
     padding: 30px;
     vertical-align: top;
     margin: none;
+}
+
+#gallery {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery-object {
+    text-align-last: center;
+    padding: 10px;
+    margin: 10px;
+    border: var(--color-primary-dark) 1px solid;
+}
+
+.gallery-object > img{
+    height: 150px;
+    width: 150px;
+}
+
+.gallery-object > p {
+    margin-bottom: 0;
+}
+
+aside {
+    width: 40%;
+    margin: 10px;
+    border: var(--color-primary-dark) 1px solid;
+}
+
+aside > img {
+    width: 100%;
+    height: auto;
+    background-color: black;
 }
 
 
