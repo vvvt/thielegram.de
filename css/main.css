@@ -132,6 +132,10 @@ li  {
     float: left;
 }
 
+a {
+    cursor: pointer;
+}
+
 .nav-item {
     display: block;
     color: var(--color-primary-light);
