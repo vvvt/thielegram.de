@@ -200,6 +200,10 @@ td {
     margin: none;
 }
 
+.x-col {
+    width: 140px;
+}
+
 .gallery-wrapper {
     display: flex;
     flex-direction: row;
