@@ -200,7 +200,7 @@ td {
     margin: none;
 }
 
-.x-col {
+td:first-child {
     width: 140px;
 }
 
