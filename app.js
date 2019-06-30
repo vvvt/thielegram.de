@@ -28,6 +28,9 @@ app.get('/api/imprint', (req, res) => {
 });
 
 
-var server = app.listen(5000, function () {
-  console.log('Node server is running..');
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
+
+app.listen(process.env.PORT || 5000);
+console.log("LISTEN ON ",process.env.PORT || 5000);
