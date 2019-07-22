@@ -11,10 +11,10 @@ const Code = () => (
     <p></p>
     <p>Work includes:</p>
     <ul>
-      <li>in development <b>InfoVis Dashboard</b> visualizing sleep-data in a mobile context</li>
+      <li>2019 Interactive Information Visualization <b>SleepWell</b> visualizing sleep-data in a mobile context</li>
       <li>2018 Human Computer Interaction <b>HyperFlatApp</b> communication app for METEC HyperFlat braille tablet</li>
       <li>2018 Information Visualization <b>Damaskus</b> digitally augmenting a museum visit</li>
-      <li>2017 Media Didactics and Psychology <b></b> develop an educational game</li>
+      <li>2017 Media Didactics and Psychology <b>Kah'rus Reise</b> develop an educational game</li>
     </ul>
 
     <h2>Personal Projects</h2>

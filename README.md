@@ -8,7 +8,7 @@ Studying in the field of computer science comes with a variety of assignments an
 
 ## Music & Composition
 
-While training in the field of computer science, I remained a musician at heart, enjoying the virtues of playing solo and ensemble for almost 20 years. While the severely mysterious and  bassoon has been my main instrument for the past 14 years, I picked up playing the guitar as a passion project about 6 years ago.
+While training in the field of computer science, I remained a musician at heart, enjoying the virtues of playing solo and ensemble for almost 20 years. While the warm and mysterious bassoon has been my main instrument for the past 14 years, I picked up playing the guitar as a passion project about 6 years ago.
 
 ## Art & Design
 
