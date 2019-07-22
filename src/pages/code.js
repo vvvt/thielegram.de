@@ -23,7 +23,7 @@ const Code = () => (
     <ul>
       <li>in development <b>Shopö</b> Android app for automated shopping lists</li>
       <li>2019 <b>loomorec</b> Android app implementing a voice-based user identification</li>
-      <li>2017<b>vvvt.github.io</b> custom new tab page</li>
+      <li>2017 <b>vvvt.github.io</b> custom new tab page</li>
       <li>2016 <b>Untitled</b> Text editor with custom shortcuts</li>
     </ul>
   </Layout>
