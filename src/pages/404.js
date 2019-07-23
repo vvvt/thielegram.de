@@ -6,8 +6,8 @@ import SEO from "../components/seo"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>Oh snap. I guess there is nothing to be found here...</p>
+    <h1>Oh snap!</h1>
+    <p>I guess what you're looking for isn't here bud...</p>
   </Layout>
 )
 
