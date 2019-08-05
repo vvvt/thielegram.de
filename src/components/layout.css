@@ -160,7 +160,7 @@ a {
     color: var(--color-primary-light)
 }
 
-.nav-icon {
+.nav-icon, .nav-icon-active{
     display: none;
 }
 
@@ -169,8 +169,10 @@ a {
         display: none;
     }
 
-    .nav-icon{
+    .nav-icon, .nav-icon-active{
         display: inline-block;
+    }
+    .nav-icon img, .nav-icon-active img{
         width: 10vw;
         margin: 3vw;
     } 
@@ -193,6 +195,14 @@ a {
 
 article {
     width: 100%;
+}
+
+p {
+    max-width: 75ch;
+}
+
+li {
+    max-width: 75ch;
 }
 
 footer {

@@ -2,10 +2,10 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import home from "../images/icon-mail.svg"
-import code from "../images/icon-mail.svg"
-import art from "../images/icon-mail.svg"
-import music from "../images/icon-mail.svg"
+import home from "../images/icons8-home-100.png"
+import code from "../images/icons8-source-code-100.png"
+import art from "../images/icons8-paint-palette-100.png"
+import music from "../images/icons8-music-100.png"
 
 const Header = () => (
   <header>
@@ -13,26 +13,26 @@ const Header = () => (
       <ul role="menubar">
         <li role="presentation">
           <Link to="/" role="menuitem" aria-label="Home" class="nav-item" activeClassName="nav-item nav-active">Thielegram</Link>
-          <Link to="/" role="menuitem" aria-label="Home" activeClassName="nav-icon-active">
-            <img class="nav-icon" alt="Home" src={home}/>
+          <Link to="/" role="menuitem" aria-label="Home" class="nav-icon" activeClassName="nav-icon-active">
+            <img alt="Home" src={home}/>
           </Link>
         </li>
         <li role="presentation">
           <Link to="/code/" role="menuitem" aria-label="Code" class="nav-item" activeClassName="nav-item nav-active">Code</Link>
-          <Link to="/code/" role="menuitem" aria-label="Code" activeClassName="nav-icon-active">
-            <img class="nav-icon" alt="Code" src={code}/>
+          <Link to="/code/" role="menuitem" aria-label="Code" class="nav-icon" activeClassName="nav-icon-active">
+            <img alt="Code" src={code}/>
           </Link>
         </li>
         <li role="presentation">
           <Link to="/music/" role="menuitem" aria-label="Music" class="nav-item" activeClassName="nav-item nav-active">Music</Link>
-          <Link to="/music/" role="menuitem" aria-label="Music" activeClassName="nav-icon-active">
-            <img class="nav-icon" alt="Music" src={music}/>
+          <Link to="/music/" role="menuitem" aria-label="Music" class="nav-icon" activeClassName="nav-icon-active">
+            <img alt="Music" src={music}/>
           </Link>
         </li>
         <li role="presentation">
           <Link to="/art/" role="menuitem" aria-label="Art" class="nav-item" activeClassName="nav-item nav-active">Art</Link>
-          <Link to="/art/" role="menuitem" aria-label="Art" activeClassName="nav-icon-active">
-            <img class="nav-icon" alt="Art" src={art}/>
+          <Link to="/art/" role="menuitem" aria-label="Art" class="nav-icon" activeClassName="nav-icon-active">
+            <img alt="Art" src={art}/>
           </Link>
         </li>
       </ul>
