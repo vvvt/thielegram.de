@@ -8,13 +8,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <article>
       <h1 class="hidden">Thielegram.de</h1>
-      <h2>Guten Tag!</h2>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-          diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      <h2>Hey there!</h2>
+      <p>My name is Vincent, I'm {Math.abs(new Date(Date.now() - new Date(1996,10,21).getTime()).getUTCFullYear() - 1970)} years old and study Media Computer Science at the <span lang="de">Technische Universität Dresden</span>. This page is mainly supposed to act as a portfolio for my hobbies: Coding, Music and Art. Check the other tabs for more details.</p>
     </article>
   </Layout>
 )
