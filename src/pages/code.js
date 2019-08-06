@@ -11,22 +11,22 @@ const Code = () => (
     <p></p>
     <p>Work includes:</p>
     <ul>
-      <li>2019 <b>SleepWell</b> visualizing sleep-data in a mobile context</li>
-      <li>2018 <b>HyperFlatApp</b> communication app for METEC HyperFlat braille tablet</li>
-      <li>2018 <b>Damaskus</b> digitally augmenting a museum visit</li>
-      <li>2017 <b>Kah'rus Reise</b> develop an educational game</li>
+      <li><span class="portfolio-entry">SleepWell - visualizing sleep-data in a mobile context</span><span class="portfolio-year">2019</span></li>
+      <li><span class="portfolio-entry">HyperFlatApp - communication app for METEC HyperFlat braille tablet</span><span class="portfolio-year">2018</span></li>
+      <li><span class="portfolio-entry">Damaskus - digitally augmenting a museum visit</span><span class="portfolio-year">2018</span></li>
+      <li><span class="portfolio-entry">Kah'rus Reise - develop an educational game</span><span class="portfolio-year">2017</span></li>
     </ul>
 
     <h2>Personal Projects</h2>
     <p></p>
     <p>Work includes:</p>
     <ul>
-      <li>in development <b>WSO</b> redesign my orchestra's website</li>
-      <li>in development <b><a href="https://werkstattorchester.de">werkstattorchester.de</a></b> maintain my orchestra's website</li>
-      <li>in development <b>Shopö</b> Android app for automated shopping lists</li>
-      <li>2019 <b>loomorec</b> Android app implementing a voice-based user identification</li>
-      <li>2017 <b>vvvt.github.io</b> custom new tab page</li>
-      <li>2016 <b>Untitled</b> Text editor with custom shortcuts</li>
+      <li><span class="portfolio-entry">WSO - redesign my orchestra's website</span><span class="portfolio-year">since 2019</span></li>
+      <li><span class="portfolio-entry"><a href="https://werkstattorchester.de">werkstattorchester.de</a> - maintain my orchestra's website</span><span class="portfolio-year">since 2018</span></li>
+      <li><span class="portfolio-entry">Shopö - Android app for automated shopping lists</span><span class="portfolio-year">on hold</span></li>
+      <li><span class="portfolio-entry">loomorec - Android app implementing a voice-based user identification</span><span class="portfolio-year">2019</span></li>
+      <li><span class="portfolio-entry">vvvt.github.io - custom new tab page</span><span class="portfolio-year">2017</span></li>
+      <li><span class="portfolio-entry">Untitled - Text editor with custom shortcuts</span><span class="portfolio-year">2016</span></li>
     </ul>
   </Layout>
 )

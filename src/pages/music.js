@@ -15,33 +15,33 @@ const Music = () => (
     <p>A life entangled with music of different genres led me to try out a number of different instruments.</p>
     <p>This includes:</p>
     <ul>
-      <li><b>Bassoon</b> <i>2005 - today</i></li>
-      <li><b>Guitar</b> <i>2013 - today</i></li>
-      <li>Ukulele <i>2019 - today</i></li>
-      <li>Bass Guitar <i>2015 - today</i></li>
-      <li>Mandolin <i>2015 - today</i></li>
-      <li>Alto Recorder <i>2004 - 2009</i></li>
-      <li>Sopranino Recorder <i>2004 - 2009</i></li>
-      <li>Tenoroon <i>2003 - 2006</i></li>
-      <li>Recorder <i>2002 - 2009</i></li>
+      <li><span class="portfolio-entry">Bassoon</span><span class="portfolio-year">since 2005</span></li>
+      <li><span class="portfolio-entry">Guitar</span><span class="portfolio-year">since 2012</span></li>
+      <li><span class="portfolio-entry">Ukulele</span><span class="portfolio-year">since 2019</span></li>
+      <li><span class="portfolio-entry">Bass Guitar</span><span class="portfolio-year"> since 2015</span></li>
+      <li><span class="portfolio-entry">Mandolin</span><span class="portfolio-year">since 2015</span></li>
+      <li><span class="portfolio-entry">Alto Recorder</span><span class="portfolio-year"> 2004 - 2009</span></li>
+      <li><span class="portfolio-entry">Sopranino Recorder</span><span class="portfolio-year"> 2004 - 2009</span></li>
+      <li><span class="portfolio-entry">Tenoroon</span><span class="portfolio-year">2003 - 2006</span></li>
+      <li><span class="portfolio-entry">Recorder</span><span class="portfolio-year">2002 - 2009</span></li>
     </ul>
 
     <h2>Compositions</h2>
     <p>At times a melody just has to be written down.</p>
     <p>Work includes:</p>
     <ul>
-      <li>2015 <b>War</b></li>
-      <li>2015 <b>Cet</b></li>
-      <li>2014 <b>Neu_Epic_Multi</b></li>
+      <li><span class="portfolio-entry">War</span><span class="portfolio-year">2015</span></li>
+      <li><span class="portfolio-entry">Cet</span><span class="portfolio-year">2015</span></li>
+      <li><span class="portfolio-entry">Neu_Epic_Multi</span><span class="portfolio-year">2014</span></li>
     </ul>
 
     <h2>Accolades</h2>
     <ul>
-      <li>Jugend Musiziert 2013 <b>2nd prize</b> Bassoon solo (ag IV)</li>
-      <li>Jugend Musiziert 2008 <b>1st prize</b> Bassoon ensemble (ag IV)</li>
-      <li>Jugend Musiziert 2008 <b>2nd prize</b> Bassoon ensemble (ag III)</li>
-      <li>Jugend Musiziert 2006 <b>2nd prize</b> Tenoroon solo (ag IB)</li>
-      <li>Jugend Musiziert 2006 <b>2nd prize</b> Recorder solo (ag IB)</li>
+      <li><span class="portfolio-entry">Jugend Musiziert 2nd prize (Bassoon solo)</span><span class="portfolio-year">2013</span></li>
+      <li><span class="portfolio-entry">Jugend Musiziert 1st prize (Bassoon ensemble)</span><span class="portfolio-year">2008</span></li>
+      <li><span class="portfolio-entry">Jugend Musiziert 2nd prize (Bassoon ensemble)</span><span class="portfolio-year">2008</span></li>
+      <li><span class="portfolio-entry">Jugend Musiziert 2nd prize (Tenoroon solo)</span><span class="portfolio-year">2006</span></li>
+      <li><span class="portfolio-entry">Jugend Musiziert 2nd prize (Recorder solo)</span><span class="portfolio-year">2006</span></li>
     </ul>
   </Layout>
 )
