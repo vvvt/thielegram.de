@@ -12,8 +12,6 @@ const Music = () => (
     playing the guitar as a passion project about 6 years ago.</p>
 
     <h2>Instruments</h2>
-    <p>A life entangled with music of different genres led me to try out a number of different instruments.</p>
-    <p>This includes:</p>
     <ul>
       <li><span class="portfolio-entry">Bassoon</span><span class="portfolio-year">since 2005</span></li>
       <li><span class="portfolio-entry">Guitar</span><span class="portfolio-year">since 2012</span></li>
@@ -27,8 +25,6 @@ const Music = () => (
     </ul>
 
     <h2>Compositions</h2>
-    <p>At times a melody just has to be written down.</p>
-    <p>Work includes:</p>
     <ul>
       <li><span class="portfolio-entry">War</span><span class="portfolio-year">2015</span></li>
       <li><span class="portfolio-entry">Cet</span><span class="portfolio-year">2015</span></li>

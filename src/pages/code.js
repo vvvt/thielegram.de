@@ -8,8 +8,6 @@ const Code = () => (
     <SEO title="Code" />
     <h1>Code</h1>
     <h2>Assignments</h2>
-    <p></p>
-    <p>Work includes:</p>
     <ul>
       <li><span class="portfolio-entry">SleepWell - visualizing sleep-data in a mobile context</span><span class="portfolio-year">2019</span></li>
       <li><span class="portfolio-entry">HyperFlatApp - communication app for METEC HyperFlat braille tablet</span><span class="portfolio-year">2018</span></li>
@@ -18,8 +16,6 @@ const Code = () => (
     </ul>
 
     <h2>Personal Projects</h2>
-    <p></p>
-    <p>Work includes:</p>
     <ul>
       <li><span class="portfolio-entry">WSO - redesign my orchestra's website</span><span class="portfolio-year">since 2019</span></li>
       <li><span class="portfolio-entry"><a href="https://werkstattorchester.de">werkstattorchester.de</a> - maintain my orchestra's website</span><span class="portfolio-year">since 2018</span></li>

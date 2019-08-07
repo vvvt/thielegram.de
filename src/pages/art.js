@@ -16,7 +16,6 @@ const Art = () => (
     <p>Every event needs to be advertised and every advertisement needs someone to create effective and eye-catching
         promotional material. In cooperation with different illustrators and by utilizing various styles, we lifted a number
     of ideas from the think tank and turned them into striking posters.</p>
-    <p>Work includes:</p>
     <ul>
       <li><span class="portfolio-entry">Werkstattorchester Dresden e.V. - Alte Welt | Neue Welt</span><span class="portfolio-year">2019</span></li>
       <li><span class="portfolio-entry">Werkstattorchester Dresden e.V. - tea time</span><span class="portfolio-year">2019</span></li>
@@ -28,14 +27,12 @@ const Art = () => (
     </ul>
     <h2>Logos &amp; Icons</h2>
     <p>In the current day and age, a good logo can speak more than a thousand words.</p>
-    <p>Work includes:</p>
     <ul>
       <li><span class="portfolio-entry">Vampir - in-app icons</span><span class="portfolio-year">since 2019</span></li>
     </ul>
     <h2>Miscellaneous</h2>
     <p>Besides the previous works, every so often there are these creative endeavours that don't fit any of the given
     categories.</p>
-    <p>Work includes:</p>
     <ul>
       <li><span class="portfolio-entry">Kinderhaus Tausendfuß - advisors board member overview</span><span class="portfolio-year">2017</span></li>
       <li><span class="portfolio-entry">Joliot-Curie-Gymnasium - graduation shirt</span><span class="portfolio-year">2015</span></li>
