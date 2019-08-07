@@ -2,21 +2,16 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import home from "../images/icons8-home-100.png"
-import code from "../images/icons8-source-code-100.png"
-import art from "../images/icons8-paint-palette-100.png"
-import music from "../images/icons8-music-100.png"
+import code from "../images/icon-code.svg"
+import art from "../images/icon-art.svg"
+import music from "../images/icon-music.svg"
+import home from "../images/icon-home.svg"
 
 const Header = () => (
   <header>
+    <img src={home}></img>
     <nav aria-label="Main">
       <ul role="menubar">
-        <li role="presentation">
-          <Link to="/" role="menuitem" aria-label="Home" class="nav-item" activeClassName="nav-item nav-active">Thielegram</Link>
-          <Link to="/" role="menuitem" aria-label="Home" class="nav-icon" activeClassName="nav-icon-active">
-            <img alt="Home" src={home}/>
-          </Link>
-        </li>
         <li role="presentation">
           <Link to="/code/" role="menuitem" aria-label="Code" class="nav-item" activeClassName="nav-item nav-active">Code</Link>
           <Link to="/code/" role="menuitem" aria-label="Code" class="nav-icon" activeClassName="nav-icon-active">
