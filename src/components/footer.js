@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import github from '../images/icon-github2.svg'
-import mail from '../images/icon-mail2.svg'
-import telegram from '../images/icon-telegram2.svg'
+import github from '../images/icon-github.svg'
+import mail from '../images/icon-mail.svg'
+import telegram from '../images/icon-telegram.svg'
 
 const Footer = () => (
   <footer>
