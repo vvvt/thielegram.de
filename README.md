@@ -12,4 +12,4 @@ While training in the field of computer science, I remained a musician at heart,
 
 ## Art & Design
 
-With almost a decade of experience in digital design and photo editing, I went on several creative endeavours, most notably designing official promotional material for [Werkstattorchester Dresden e.V.](https://www.werkstattorchester.de) and [Joliot-Curie-Gymnasium Görlitz](https://www.curiegymnasium.goerlitz.de/). 
+With almost a decade of experience in digital design and photo editing, I went on several creative endeavours, most notably designing official promotional material for [Werkstattorchester Dresden e.V.](https://werkstattorchester.de) and [Joliot-Curie-Gymnasium Görlitz](https://www.curiegymnasium.goerlitz.de/). 

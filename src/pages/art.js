@@ -9,7 +9,7 @@ const Art = () => (
     <h1>Art</h1>
     <p>With nearly a decade of experience in digital design and image manipulation, I went on several creative endeavours,
     most notably designing official promotional material for <a
-        href="https://www.werkstattorchester.de">Werkstattorchester Dresden e.V.</a> and <a
+        href="https://werkstattorchester.de">Werkstattorchester Dresden e.V.</a> and <a
           href="https://www.curiegymnasium.goerlitz.de/">Joliot-Curie-Gymnasium Görlitz</a>
     </p>
     <h2>Posters &amp; Flyers</h2>

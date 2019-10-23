@@ -9,7 +9,9 @@ import home from "../images/icon-home.svg"
 
 const Header = () => (
   <header>
-    <img alt="Home" src={home}></img>
+    <Link to="/" aria-label="Home">
+      <img alt="Home" src={home} />
+    </Link>
     <nav aria-label="Main">
       <ul role="menubar">
         <li role="presentation">
