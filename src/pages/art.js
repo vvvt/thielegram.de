@@ -17,28 +17,28 @@ const Art = () => (
         promotional material. In cooperation with different illustrators and by utilizing various styles, we lifted a number
     of ideas from the think tank and turned them into striking posters.</p>
     <ul>
-      <li><span class="portfolio-entry">Werkstattorchester Dresden e.V. - Alte Welt | Neue Welt</span><span class="portfolio-year">2019</span></li>
-      <li><span class="portfolio-entry">Werkstattorchester Dresden e.V. - tea time</span><span class="portfolio-year">2019</span></li>
-      <li><span class="portfolio-entry">Werkstattorchester Dresden e.V. - Orff Beatz</span><span class="portfolio-year">2018</span></li>
-      <li><span class="portfolio-entry">Werkstattorchester Dresden e.V. - Romantischer wird's nicht</span><span class="portfolio-year">2018</span></li>
-      <li><span class="portfolio-entry">Joliot-Curie-Gymnasium - official school flyer</span><span class="portfolio-year">2015</span></li>
-      <li><span class="portfolio-entry">Joliot-Curie-Gymnasium - Halloweenbasar</span><span class="portfolio-year">2014</span></li>
-      <li><span class="portfolio-entry">Joliot-Curie-Gymnasium - Frühstücksbasar</span><span class="portfolio-year">2014</span></li>
+      <li><span className="portfolio-entry">Werkstattorchester Dresden e.V. - Alte Welt | Neue Welt</span><span className="portfolio-year">2019</span></li>
+      <li><span className="portfolio-entry">Werkstattorchester Dresden e.V. - tea time</span><span className="portfolio-year">2019</span></li>
+      <li><span className="portfolio-entry">Werkstattorchester Dresden e.V. - Orff Beatz</span><span className="portfolio-year">2018</span></li>
+      <li><span className="portfolio-entry">Werkstattorchester Dresden e.V. - Romantischer wird's nicht</span><span className="portfolio-year">2018</span></li>
+      <li><span className="portfolio-entry">Joliot-Curie-Gymnasium - official school flyer</span><span className="portfolio-year">2015</span></li>
+      <li><span className="portfolio-entry">Joliot-Curie-Gymnasium - Halloweenbasar</span><span className="portfolio-year">2014</span></li>
+      <li><span className="portfolio-entry">Joliot-Curie-Gymnasium - Frühstücksbasar</span><span className="portfolio-year">2014</span></li>
     </ul>
     <h2>Logos &amp; Icons</h2>
     <p>In the current day and age, a good logo can speak more than a thousand words.</p>
     <ul>
-      <li><span class="portfolio-entry">Vampir - in-app icons</span><span class="portfolio-year">since 2019</span></li>
+      <li><span className="portfolio-entry">Vampir - in-app icons</span><span className="portfolio-year">since 2019</span></li>
     </ul>
     <h2>Miscellaneous</h2>
     <p>Besides the previous works, every so often there are these creative endeavours that don't fit any of the given
     categories.</p>
     <ul>
-      <li><span class="portfolio-entry">Kinderhaus Tausendfuß - advisors board member overview</span><span class="portfolio-year">2017</span></li>
-      <li><span class="portfolio-entry">Joliot-Curie-Gymnasium - graduation shirt</span><span class="portfolio-year">2015</span></li>
-      <li><span class="portfolio-entry">Joliot-Curie-Gymnasium - graduation paper</span><span class="portfolio-year">2015</span></li>
-      <li><span class="portfolio-entry">Joliot-Curie-Gymnasium - offical graduation artwork</span><span class="portfolio-year">2015</span></li>
-      <li><span class="portfolio-entry">Joliot-Curie-Gymnasium - official planner artwork</span><span class="portfolio-year">2014</span></li>
+      <li><span className="portfolio-entry">Kinderhaus Tausendfuß - advisors board member overview</span><span className="portfolio-year">2017</span></li>
+      <li><span className="portfolio-entry">Joliot-Curie-Gymnasium - graduation shirt</span><span className="portfolio-year">2015</span></li>
+      <li><span className="portfolio-entry">Joliot-Curie-Gymnasium - graduation paper</span><span className="portfolio-year">2015</span></li>
+      <li><span className="portfolio-entry">Joliot-Curie-Gymnasium - offical graduation artwork</span><span className="portfolio-year">2015</span></li>
+      <li><span className="portfolio-entry">Joliot-Curie-Gymnasium - official planner artwork</span><span className="portfolio-year">2014</span></li>
     </ul>
   </Layout>
 )
