@@ -123,10 +123,17 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif
 }
 
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 main {
     overflow: hidden;
     margin: 0;
     padding: 20px 15vw;
+    flex-grow: 1;
 }
 
 header {
@@ -189,6 +196,13 @@ header ul {
 @media (max-width: 500px) {
     header {
         justify-content: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+
+    footer {
+        margin-bottom: 88px;
     }
 
     .nav-item {

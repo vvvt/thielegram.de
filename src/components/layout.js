@@ -9,9 +9,11 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header/>
-      <main>{children}</main>
-      <Footer/>
+      <div className="site">
+        <Header/>
+        <main>{children}</main>
+        <Footer/>
+      </div>
     </>
   )
 }
