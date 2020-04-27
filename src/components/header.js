@@ -13,22 +13,22 @@ const Header = () => (
       <img alt="Home" src={home} />
     </Link>
     <nav aria-label="Main">
-      <ul role="menubar">
-        <li role="presentation">
-          <Link to="/code/" role="menuitem" aria-label="Code" className="nav-item" activeClassName="nav-item nav-active">Code</Link>
-          <Link to="/code/" role="menuitem" aria-label="Code" className="nav-icon" activeClassName="nav-icon-active">
+      <ul>
+        <li>
+          <Link to="/code/" aria-label="Code" className="nav-item" activeClassName="nav-item nav-active">Code</Link>
+          <Link to="/code/" aria-label="Code" className="nav-icon" activeClassName="nav-icon-active">
             <img alt="Code" src={code}/>
           </Link>
         </li>
-        <li role="presentation">
-          <Link to="/music/" role="menuitem" aria-label="Music" className="nav-item" activeClassName="nav-item nav-active">Music</Link>
-          <Link to="/music/" role="menuitem" aria-label="Music" className="nav-icon" activeClassName="nav-icon-active">
+        <li>
+          <Link to="/music/" aria-label="Music" className="nav-item" activeClassName="nav-item nav-active">Music</Link>
+          <Link to="/music/" aria-label="Music" className="nav-icon" activeClassName="nav-icon-active">
             <img alt="Music" src={music}/>
           </Link>
         </li>
-        <li role="presentation">
-          <Link to="/art/" role="menuitem" aria-label="Art" className="nav-item" activeClassName="nav-item nav-active">Art</Link>
-          <Link to="/art/" role="menuitem" aria-label="Art" className="nav-icon" activeClassName="nav-icon-active">
+        <li>
+          <Link to="/art/" aria-label="Art" className="nav-item" activeClassName="nav-item nav-active">Art</Link>
+          <Link to="/art/" aria-label="Art" className="nav-icon" activeClassName="nav-icon-active">
             <img alt="Art" src={art}/>
           </Link>
         </li>
