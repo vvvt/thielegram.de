@@ -1,12 +1,12 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import NavItem from "./navItem"
 
-const Navigation = () => (
+const Navigation = ({ home }) => (
   <nav
     style={{
       width: "50%",
-      backgroundColor: "blue",
       position: "fixed",
       top: 0,
       bottom: 0,
@@ -36,5 +36,9 @@ const Navigation = () => (
     </ul>
   </nav>
 )
+
+Navigation.propTypes = {
+  home: PropTypes.bool,
+}
 
 export default Navigation
