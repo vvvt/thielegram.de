@@ -12,9 +12,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Main from "./main"
-import Navigation from "./nav"
+import Navigation from "./navigation"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, color, home }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -32,8 +32,8 @@ const Layout = ({ children }) => {
         flexDirection: "row",
         minHeight: "100vh"
       }}>
-        <Main>{children}</Main>
-        <Navigation />
+        <Main color={color}>{children}</Main>
+        <Navigation home={home}/>
       </div>
     </>
   )
@@ -41,6 +41,8 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  color: PropTypes.string,
+  home: PropTypes.bool,
 }
 
 export default Layout

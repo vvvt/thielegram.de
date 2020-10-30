@@ -11,7 +11,7 @@ type DataProps = {
 }
 
 const Code: React.FC<PageProps<DataProps>> = ({ data, path }) => (
-  <Layout>
+  <Layout color="#47F68D">
     <SEO title="Code" />
     <Link to="/">Go back to the homepage</Link>
     <h1>Code</h1>

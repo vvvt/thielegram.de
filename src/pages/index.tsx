@@ -11,7 +11,7 @@ type DataProps = {
 }
 
 const Index: React.FC<PageProps<DataProps>> = ({ data, path }) => (
-  <Layout>
+  <Layout color="#2D2D2D" home>
     <SEO title="Home" />
     <h1>Vincent Thiele</h1>
     <h2>Portfolio</h2>
