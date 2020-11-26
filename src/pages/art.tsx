@@ -1,6 +1,6 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
-import { ArrowLeft } from 'react-feather';
+import { ArrowLeft } from 'react-feather'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,7 +15,7 @@ const Art: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout color="#B57BFF">
     <SEO title="Art" />
     <Link to="/">
-      <ArrowLeft size="48" />
+      <ArrowLeft size="48" color="#2D2D2D"/>
     </Link>
     <h1>Art</h1>
     <h2>WSO Poster Series</h2>
