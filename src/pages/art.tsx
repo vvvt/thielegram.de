@@ -5,6 +5,8 @@ import { ArrowLeft } from "react-feather";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Colors from "../classes/colors";
+import Gallery from "../components/gallery";
+import GalleryItem from "../components/galleryItem";
 
 type DataProps = {
 	site: {
@@ -20,6 +22,21 @@ const Art: React.FC<PageProps<DataProps>> = ({ data, path }) => (
 		</Link>
 		<h1>Art</h1>
 		<h2>WSO Poster Series</h2>
+		<Gallery>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+			<GalleryItem></GalleryItem>
+		</Gallery>
 	</Layout>
 );
 
