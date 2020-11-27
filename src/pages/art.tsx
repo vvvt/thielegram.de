@@ -1,34 +1,34 @@
-import React from "react"
-import { PageProps, Link, graphql } from "gatsby"
-import { ArrowLeft } from 'react-feather'
+import React from "react";
+import { PageProps, Link, graphql } from "gatsby";
+import { ArrowLeft } from "react-feather";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Colors from "../classes/colors"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Colors from "../classes/colors";
 
 type DataProps = {
-  site: {
-    buildTime: string
-  }
-}
+	site: {
+		buildTime: string;
+	};
+};
 
 const Art: React.FC<PageProps<DataProps>> = ({ data, path }) => (
-  <Layout color={Colors.sectionColorC}>
-    <SEO title="Art" />
-    <Link to="/">
-      <ArrowLeft size="48" color="#2D2D2D"/>
-    </Link>
-    <h1>Art</h1>
-    <h2>WSO Poster Series</h2>
-  </Layout>
-)
+	<Layout color={Colors.sectionColorC}>
+		<SEO title="Art" />
+		<Link to="/">
+			<ArrowLeft size="48" color={Colors.dark} />
+		</Link>
+		<h1>Art</h1>
+		<h2>WSO Poster Series</h2>
+	</Layout>
+);
 
-export default Art
+export default Art;
 
 export const query = graphql`
-  {
-    site {
-      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-    }
-  }
-`
+	{
+		site {
+			buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+		}
+	}
+`;
