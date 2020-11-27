@@ -1,6 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Colors from "../classes/colors"
+import React from "react";
+import PropTypes from "prop-types";
+import Colors from "../classes/colors";
 
 const Main = ({ children, color }) => (
   <main
@@ -13,10 +13,10 @@ const Main = ({ children, color }) => (
   >
     {children}
   </main>
-)
+);
 
 Main.propTypes = {
   color: PropTypes.string,
-}
+};
 
-export default Main
+export default Main;

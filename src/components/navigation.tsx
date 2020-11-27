@@ -1,9 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import NavItem from "./navItem"
-import Colors from "../classes/colors"
-
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import NavItem from "./navItem";
+import Colors from "../classes/colors";
 
 const Navigation = ({ home }) => (
   <nav
@@ -12,7 +11,7 @@ const Navigation = ({ home }) => (
       position: "fixed",
       top: 0,
       bottom: 0,
-      right: 0
+      right: 0,
     }}
   >
     <ul
@@ -37,10 +36,10 @@ const Navigation = ({ home }) => (
       </li>
     </ul>
   </nav>
-)
+);
 
 Navigation.propTypes = {
   home: PropTypes.bool,
-}
+};
 
-export default Navigation
+export default Navigation;

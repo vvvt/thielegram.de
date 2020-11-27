@@ -1,15 +1,15 @@
-import React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import React from "react";
+import { PageProps, Link, graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Colors from "../classes/colors"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Colors from "../classes/colors";
 
 type DataProps = {
   site: {
-    buildTime: string
-  }
-}
+    buildTime: string;
+  };
+};
 
 const Index: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout color={Colors.dark} home>
@@ -42,9 +42,9 @@ const Index: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       blanditiis facilis iste autem dolorem est iusto quo repellendus.
     </p>
   </Layout>
-)
+);
 
-export default Index
+export default Index;
 
 export const query = graphql`
   {
@@ -52,4 +52,4 @@ export const query = graphql`
       buildTime(formatString: "YYYY-MM-DD hh:mm a z")
     }
   }
-`
+`;

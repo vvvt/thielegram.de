@@ -1,14 +1,14 @@
-import React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import React from "react";
+import { PageProps, Link, graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 type DataProps = {
   site: {
-    buildTime: string
-  }
-}
+    buildTime: string;
+  };
+};
 
 const NotFoundPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
@@ -16,7 +16,6 @@ const NotFoundPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <h1>404: Not Found</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
   </Layout>
-)
+);
 
-export default NotFoundPage
-
+export default NotFoundPage;

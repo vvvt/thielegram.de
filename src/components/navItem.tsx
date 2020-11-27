@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import Colors from "../classes/colors"
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import Colors from "../classes/colors";
 
 const NavItem = ({ to, color, children }) => (
   <Link
@@ -22,12 +22,12 @@ const NavItem = ({ to, color, children }) => (
   >
     {children}
   </Link>
-)
+);
 
 NavItem.propTypes = {
   to: PropTypes.string,
   color: PropTypes.string,
   children: PropTypes.string,
-}
+};
 
-export default NavItem
+export default NavItem;

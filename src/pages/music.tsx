@@ -8,30 +8,30 @@ import Colors from "../classes/colors";
 import Audio from "../components/audio";
 
 type DataProps = {
-	site: {
-		buildTime: string;
-	};
+  site: {
+    buildTime: string;
+  };
 };
 
 const Music: React.FC<PageProps<DataProps>> = ({ data, path }) => (
-	<Layout color={Colors.sectionColorB} home>
-		<SEO title="Music" />
-		<Link to="/">
-			<ArrowLeft size="48" color={Colors.dark} />
-		</Link>
-		<h1>Music</h1>
-		<Audio></Audio>
-		<Audio></Audio>
-		<Audio></Audio>
-	</Layout>
+  <Layout color={Colors.sectionColorB} home>
+    <SEO title="Music" />
+    <Link to="/">
+      <ArrowLeft size="48" color={Colors.dark} />
+    </Link>
+    <h1>Music</h1>
+    <Audio></Audio>
+    <Audio></Audio>
+    <Audio></Audio>
+  </Layout>
 );
 
 export default Music;
 
 export const query = graphql`
-	{
-		site {
-			buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-		}
-	}
+  {
+    site {
+      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+    }
+  }
 `;

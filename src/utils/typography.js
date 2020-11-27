@@ -1,4 +1,4 @@
-import Typography from "typography"
+import Typography from "typography";
 
 const typography = new Typography({
   baseFontSize: "18px",
@@ -13,8 +13,8 @@ const typography = new Typography({
       styles: [400],
     },
   ],
-})
+});
 
-typography.injectStyles()
+typography.injectStyles();
 
-export default typography
+export default typography;

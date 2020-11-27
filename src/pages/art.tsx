@@ -9,43 +9,43 @@ import Gallery from "../components/gallery";
 import GalleryItem from "../components/galleryItem";
 
 type DataProps = {
-	site: {
-		buildTime: string;
-	};
+  site: {
+    buildTime: string;
+  };
 };
 
 const Art: React.FC<PageProps<DataProps>> = ({ data, path }) => (
-	<Layout color={Colors.sectionColorC}>
-		<SEO title="Art" />
-		<Link to="/">
-			<ArrowLeft size="48" color={Colors.dark} />
-		</Link>
-		<h1>Art</h1>
-		<h2>WSO Poster Series</h2>
-		<Gallery>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-			<GalleryItem></GalleryItem>
-		</Gallery>
-	</Layout>
+  <Layout color={Colors.sectionColorC}>
+    <SEO title="Art" />
+    <Link to="/">
+      <ArrowLeft size="48" color={Colors.dark} />
+    </Link>
+    <h1>Art</h1>
+    <h2>WSO Poster Series</h2>
+    <Gallery>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+      <GalleryItem></GalleryItem>
+    </Gallery>
+  </Layout>
 );
 
 export default Art;
 
 export const query = graphql`
-	{
-		site {
-			buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-		}
-	}
+  {
+    site {
+      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+    }
+  }
 `;
