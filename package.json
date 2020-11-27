@@ -6,7 +6,7 @@
   "author": "Vincent Thiele <hey@thielegram.de>",
   "dependencies": {
     "gatsby": "^2.24.67",
-    "gatsby-cli": "^2.12.111",
+    "gatsby-cli": "^2.14.1",
     "gatsby-image": "^2.4.20",
     "gatsby-plugin-manifest": "^2.4.33",
     "gatsby-plugin-offline": "^3.2.30",

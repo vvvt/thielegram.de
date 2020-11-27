@@ -16,7 +16,7 @@ const Art: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout color={Colors.sectionColorC}>
     <SEO title="Art" />
     <Link to="/">
-      <ArrowLeft size="48" />
+      <ArrowLeft size="48" color="#2D2D2D"/>
     </Link>
     <h1>Art</h1>
     <h2>WSO Poster Series</h2>

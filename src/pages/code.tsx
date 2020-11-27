@@ -1,10 +1,11 @@
-import React from "react";
-import { PageProps, Link, graphql } from "gatsby";
-import { ArrowLeft } from "react-feather";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Colors from "../classes/colors";
+import React from "react"
+import { PageProps, Link, graphql } from "gatsby"
+import { ArrowLeft } from 'react-feather'
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Colors from "../classes/colors"
 
 type DataProps = {
 	site: {
