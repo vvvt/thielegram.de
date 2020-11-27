@@ -3,6 +3,7 @@ import { PageProps, Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Colors from "../classes/colors"
 
 type DataProps = {
   site: {
@@ -11,7 +12,7 @@ type DataProps = {
 }
 
 const Index: React.FC<PageProps<DataProps>> = ({ data, path }) => (
-  <Layout color="#2D2D2D" home>
+  <Layout color={Colors.dark} home>
     <SEO title="Home" />
     <h1>Vincent Thiele</h1>
     <h2>Portfolio</h2>

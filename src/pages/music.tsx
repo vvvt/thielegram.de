@@ -1,30 +1,34 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
+import { ArrowLeft } from 'react-feather'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Colors from "../classes/colors"
 
 type DataProps = {
-  site: {
-    buildTime: string
-  }
-}
+	site: {
+		buildTime: string;
+	};
+};
 
 const Music: React.FC<PageProps<DataProps>> = ({ data, path }) => (
-  <Layout color="#FF8946" home>
-    <SEO title="Music" />
-    <Link to="/">Go back to the homepage</Link>
-    <h1>Music</h1>
-    <h2></h2>
-  </Layout>
-)
+	<Layout color={Colors.sectionColorB} home>
+		<SEO title="Music" />
+		<Link to="/">
+			<ArrowLeft size="48" />
+		</Link>
+		<h1>Music</h1>
+		<h2></h2>
+	</Layout>
+);
 
-export default Music
+export default Music;
 
 export const query = graphql`
-  {
-    site {
-      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-    }
-  }
-`
+	{
+		site {
+			buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+		}
+	}
+`;

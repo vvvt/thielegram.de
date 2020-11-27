@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import Colors from "../classes/colors"
 
 const NavItem = ({ to, color, children }) => (
   <Link
@@ -16,7 +17,7 @@ const NavItem = ({ to, color, children }) => (
       fontFamily: "Red Rose",
       fontSize: "8rem",
       textDecoration: "none",
-      color: "#2d2d2d"
+      color: Colors.dark,
     }}
   >
     {children}
