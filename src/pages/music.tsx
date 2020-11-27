@@ -5,6 +5,7 @@ import { ArrowLeft } from "react-feather";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Colors from "../classes/colors";
+import Audio from "../components/audio";
 
 type DataProps = {
 	site: {
@@ -19,7 +20,9 @@ const Music: React.FC<PageProps<DataProps>> = ({ data, path }) => (
 			<ArrowLeft size="48" color={Colors.dark} />
 		</Link>
 		<h1>Music</h1>
-		<h2></h2>
+		<Audio></Audio>
+		<Audio></Audio>
+		<Audio></Audio>
 	</Layout>
 );
 
