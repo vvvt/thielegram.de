@@ -14,6 +14,9 @@ const Work = ({ projects, meta }) => (
   <>
     <Helmet
       title={`Work | Vincent Thiele`}
+      htmlAttributes={{
+        lang: 'en',
+      }}
       meta={[
         {
           name: `description`,

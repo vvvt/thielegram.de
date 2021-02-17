@@ -54,7 +54,9 @@ const Project = ({ project, meta }) => {
     <>
       <Helmet
         title={`${project.project_title[0].text} | Vincent Thiele`}
-        titleTemplate={`%s | ${meta.title}`}
+        htmlAttributes={{
+          lang: "en",
+        }}
         meta={[
           {
             name: `description`,

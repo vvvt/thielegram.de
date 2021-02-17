@@ -121,6 +121,9 @@ const RenderBody = ({ home, projects, meta }) => (
   <>
     <Helmet
       title={meta.title}
+      htmlAttributes={{
+        lang: 'en',
+      }}
       meta={[
         {
           name: `description`,

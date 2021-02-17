@@ -31,6 +31,9 @@ const Blog = ({ posts, meta }) => (
   <>
     <Helmet
       title={`Blog | Vincent Thiele`}
+      htmlAttributes={{
+        lang: 'en',
+      }}
       meta={[
         {
           name: `description`,
