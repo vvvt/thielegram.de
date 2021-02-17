@@ -16,14 +16,17 @@ const FooterContainer = styled("div")`
   }
 `
 
-const FooterAuthor = styled("a")`
+const FooterLine = styled("span")`
   font-size: 0.75em;
   color: ${colors.grey700};
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
   margin-top: 1.5em;
+`
+const FooterLink = styled("a")`
+  text-decoration: none;
+  color: ${colors.grey700};
 
   &:hover {
     color: ${colors.blue900};
@@ -35,12 +38,12 @@ const Footer = () => (
     <Link to="/">
       <Logo />
     </Link>
-    <FooterAuthor href="#">
-      © {new Date().getFullYear()} Vincent Thiele
-    </FooterAuthor>
-    <FooterAuthor href="https://www.marguerite.io/?utm_source=prist&utm_medium=footer&utm_campaign=prist_starter">
-      Design based on "Prist" by Marguerite Roth
-    </FooterAuthor>
+    <FooterLine>© {new Date().getFullYear()} Vincent Thiele</FooterLine>
+    <FooterLine>
+      <FooterLink href="https://www.marguerite.io/?utm_source=prist&utm_medium=footer&utm_campaign=prist_starter">
+        Design based on "Prist" by Marguerite Roth
+      </FooterLink>
+    </FooterLine>
   </FooterContainer>
 )
 
