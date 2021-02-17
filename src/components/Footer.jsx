@@ -35,9 +35,7 @@ const FooterLink = styled("a")`
 
 const Footer = () => (
   <FooterContainer>
-    <Link to="/">
-      <Logo />
-    </Link>
+    <Logo />
     <FooterLine>© {new Date().getFullYear()} Vincent Thiele</FooterLine>
     <FooterLine>
       <FooterLink href="https://www.marguerite.io/?utm_source=prist&utm_medium=footer&utm_campaign=prist_starter">

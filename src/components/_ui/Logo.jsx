@@ -1,6 +1,8 @@
 import React from "react"
+import { Link } from "gatsby"
+import styled from "@emotion/styled"
 
-const Logo = () => (
+const Icon = () => (
   <svg
     width="71"
     height="31"
@@ -13,6 +15,17 @@ const Logo = () => (
       fill="#75A9FE"
     />
   </svg>
+)
+
+const SRText = styled("span")`
+  visibility: hidden;
+`
+
+const Logo = () => (
+  <Link to="/">
+    <Icon />
+    <SRText>Home</SRText>
+  </Link>
 )
 
 export default Logo
