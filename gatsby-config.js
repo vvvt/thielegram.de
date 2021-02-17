@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Prist | Gatsby & Prismic Starter`,
-    description: `A starter powered by Gatsby and Prismic to showcase portfolios and blogs.`,
+    title: `Vincent Thiele`,
+    description: `Portfolio and Blog`,
     author: `Vincent Thiele | thielegram.de`,
   },
   plugins: [
@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: '@prismicio/gatsby-source-prismic-graphql',
       options: {
-        repositoryName: 'thielegramde', // (REQUIRED, replace with your own)
+        repositoryName: 'thielegramde',
         linkResolver: () => post => `/${post.uid}`,
       }
     },
