@@ -1,5 +1,4 @@
 import React from "react"
-import Button from "components/_ui/Button"
 import styled from "@emotion/styled"
 import dimensions from "styles/dimensions"
 import { RichText } from "prismic-reactjs"
@@ -63,17 +62,6 @@ const AboutBio = styled("div")`
 
   @media (max-width: ${dimensions.maxwidthMobile}px) {
     grid-row: 2;
-  }
-`
-
-const AboutActions = styled("div")`
-  padding-top: 1em;
-  padding-bottom: 3em;
-
-  @media (max-width: ${dimensions.maxwidthMobile}px) {
-    padding: 0;
-    grid-column: 1 / -1;
-    grid-row: 1;
   }
 `
 
