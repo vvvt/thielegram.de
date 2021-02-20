@@ -119,15 +119,14 @@ const ProjectCardImageContainer = styled("div")`
   background: ${colors.grey200};
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
   position: relative;
   padding-left: 2em;
   padding-right: 2em;
 
   @media (max-width: ${dimensions.maxwidthTablet}px) {
-    padding-top: 3em;
-    max-height: 200px;
+    padding: 0;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -152,7 +151,7 @@ const ProjectCardImageContainer = styled("div")`
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
 
     @media (max-width: ${dimensions.maxwidthTablet}px) {
-      max-width: 300px;
+      max-width: unset;
     }
   }
 `
