@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import colors from "styles/colors"
 import Logo from "components/_ui/Logo"
 
-const FooterContainer = styled("div")`
+const FooterContainer = styled("footer")`
   padding-top: 3.75em;
   padding-bottom: 3em;
   display: flex;

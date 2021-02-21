@@ -5,7 +5,7 @@ import colors from "styles/colors"
 import dimensions from "styles/dimensions"
 import Logo from "components/_ui/Logo"
 
-const HeaderContainer = styled("div")`
+const HeaderContainer = styled("header")`
   padding-top: 3.75em;
   padding-bottom: 3em;
 `
