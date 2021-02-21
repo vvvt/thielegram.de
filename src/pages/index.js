@@ -160,17 +160,11 @@ const RenderBody = ({ home, projects, meta }) => (
       ].concat(meta)}
     />
     <Hero>
-      <>{RichText.render(home.hero_title)}</>
-      <a
-        href={home.hero_button_link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button>{RichText.render(home.hero_button_text)}</Button>
-      </a>
+      {RichText.render(home.hero_title)}
     </Hero>
+    <h2>Recent Stuff</h2>
     <Section>
-      {projects.map((project, i) => (
+      {projects.splice(0, 2).map((project, i) => (
         <ProjectCard
           key={i}
           category={project.node.project_category}

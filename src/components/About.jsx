@@ -66,7 +66,7 @@ const AboutBio = styled("div")`
 `
 
 const About = ({ bio, socialLinks }) => (
-  <AboutContainer>
+  <AboutContainer id="about">
     <AboutLinkContainer>
       {socialLinks.map((social, i) => (
         <AboutLink

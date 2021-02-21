@@ -86,7 +86,7 @@ const ProjectCardCategory = styled("span")`
   color: ${colors.grey750};
 `
 
-const ProjectCardTitle = styled("h2")`
+const ProjectCardTitle = styled("h3")`
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 `
