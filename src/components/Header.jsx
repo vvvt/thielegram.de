@@ -13,6 +13,7 @@ const HeaderContainer = styled("header")`
 const HeaderContent = styled("div")`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 
 const HeaderLinks = styled("div")`
@@ -38,8 +39,6 @@ const HeaderLinks = styled("div")`
     font-weight: 600;
     font-size: 0.95em;
     height: 100%;
-    padding-bottom: 1.25em;
-    padding-top: 0.25em;
     display: block;
     position: relative;
 
@@ -47,25 +46,26 @@ const HeaderLinks = styled("div")`
       position: absolute;
       content: "";
       bottom: 0;
-      width: 18px;
-      height: 3px;
+      width: 5px;
+      height: 5px;
       background: transparent;
-      bottom: -3px;
+      bottom: -14px;
       right: 50%;
-      margin-right: -9px;
+      margin-right: -3px;
       transition: 100ms ease-in-out background;
+      border-radius: 4px;
     }
 
     &:hover {
       &:after {
-        background: ${colors.blue700};
+        background: ${colors.blue500};
         transition: 100ms ease-in-out background;
       }
     }
 
     &.Link--is-active {
       &:after {
-        background: ${colors.blue700};
+        background: ${colors.blue500};
         transition: 100ms ease-in-out background;
       }
     }
