@@ -5,15 +5,21 @@ import dimensions from "styles/dimensions"
 
 const ButtonContainer = styled("button")`
   padding: 1em 2em;
-  background: ${colors.blue400};
+  background: linear-gradient(
+    135deg,
+    ${colors.blue700} 0%,
+    ${colors.blue800} 100%
+  );
   font-weight: 600;
   color: white;
   outline: none;
   border: none;
+  opacity: 1;
   font-size: 1rem;
   border-radius: 2px;
   position: relative;
-  transition: background 100ms ease-in-out;
+  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.06);
+  transition: opacity 150ms ease-in-out;
 
   @media (max-width: ${dimensions.maxwidthMobile}px) {
     padding: 0.8em 1.8em;
@@ -24,36 +30,24 @@ const ButtonContainer = styled("button")`
     margin: 0;
   }
 
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      135deg,
-      ${colors.pink400} 0%,
-      ${colors.purple400} 100%
-    );
-    z-index: -1;
-  }
-
   &:hover {
     cursor: pointer;
-    background: transparent;
-    transition: background 100ms ease-in-out;
+    opacity: 0.9;
+    box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.1);
+    transition: opacity 150ms ease-in-out;
   }
 
   &.Button--secondary {
-    background: ${colors.blue200};
-    color: ${colors.blue600};
+    background: ${colors.grey100};
+    color: ${colors.blue700};
     padding: 0.95em 1.8em;
+    opacity: 1;
     font-size: 0.95rem;
+    transition: opacity 150ms ease-in-out;
 
     &:hover {
-      background: ${colors.blue300};
-      transition: background 100ms ease-in-out;
+      opacity: 0.9;
+      transition: opacity 150ms ease-in-out;
     }
   }
 `
