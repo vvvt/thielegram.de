@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import colors from "styles/colors"
 import Logo from "components/_ui/Logo"
@@ -18,7 +17,7 @@ const FooterContainer = styled("div")`
 
 const FooterLine = styled("span")`
   font-size: 0.75em;
-  color: ${colors.grey700};
+  color: ${colors.grey750};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +25,7 @@ const FooterLine = styled("span")`
 `
 const FooterLink = styled("a")`
   text-decoration: none;
-  color: ${colors.grey700};
+  color: ${colors.grey750};
 
   &:hover {
     color: ${colors.blue900};

@@ -16,13 +16,13 @@ const typeStyles = css`
     }
   }
 
-  h2 {
+  /* h2 {
     margin-bottom: 2rem;
     font-size: 1.9em;
     line-height: 1.1;
-  }
+  } */
 
-  h3 {
+  h2 {
     line-height: 1.2;
     font-size: 1.5em;
   }

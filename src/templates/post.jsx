@@ -24,9 +24,9 @@ const PostHeroContainer = styled("div")`
 const PostHeroAnnotation = styled("div")`
   padding-top: 0.25em;
 
-  h6 {
+  div {
     text-align: right;
-    color: ${colors.grey600};
+    color: ${colors.grey750};
     font-weight: 400;
     font-size: 0.85rem;
   }
@@ -41,12 +41,7 @@ const PostCategory = styled("div")`
   margin: 0 auto;
   text-align: center;
   font-weight: 600;
-  color: ${colors.grey600};
-
-  h5 {
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
+  color: ${colors.grey750};
 `
 
 const PostTitle = styled("div")`
@@ -81,7 +76,7 @@ const PostMetas = styled("div")`
   margin-bottom: 2em;
   justify-content: space-between;
   font-size: 0.85em;
-  color: ${colors.grey600};
+  color: ${colors.grey750};
 `
 
 const PostAuthor = styled("div")`
@@ -136,7 +131,7 @@ const Post = ({ post, meta }) => {
         ].concat(meta)}
       />
       <Layout>
-        <PostCategory>{RichText.render(post.post_category)}</PostCategory>
+        <PostCategory>{post.post_category[0].text}</PostCategory>
         <PostTitle>{RichText.render(post.post_title)}</PostTitle>
         <PostMetas>
           <PostAuthor>{post.post_author}</PostAuthor>
@@ -148,7 +143,7 @@ const Post = ({ post, meta }) => {
           <PostHeroContainer>
             <img src={post.post_hero_image.url} alt="bees" />
             <PostHeroAnnotation>
-              {RichText.render(post.post_hero_annotation)}
+              <div>{post.post_hero_annotation[0].text}</div>
             </PostHeroAnnotation>
           </PostHeroContainer>
         )}

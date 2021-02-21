@@ -35,12 +35,12 @@ const PostCardContainer = styled(Link)`
   }
 `
 
-const PostCategory = styled("h6")`
+const PostCategory = styled("span")`
   font-weight: 600;
-  color: ${colors.grey600};
+  color: ${colors.grey750};
 `
 
-const PostTitle = styled("h3")`
+const PostTitle = styled("h2")`
   margin: 0;
   margin-top: 0.5em;
 `
@@ -51,7 +51,7 @@ const PostMetas = styled("div")`
   margin-top: 1.5em;
   justify-content: space-between;
   font-size: 0.85em;
-  color: ${colors.grey600};
+  color: ${colors.grey750};
 `
 
 const PostAuthor = styled("div")`

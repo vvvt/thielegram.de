@@ -81,12 +81,12 @@ const ProjectCardContent = styled("div")`
   }
 `
 
-const ProjectCardCategory = styled("h6")`
+const ProjectCardCategory = styled("span")`
   font-weight: 600;
-  color: ${colors.grey600};
+  color: ${colors.grey750};
 `
 
-const ProjectCardTitle = styled("h3")`
+const ProjectCardTitle = styled("h2")`
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 `
