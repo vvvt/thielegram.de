@@ -4,6 +4,7 @@ import { RichText } from "prismic-reactjs"
 import styled from "@emotion/styled"
 import dimensions from "styles/dimensions"
 import colors from "styles/colors"
+import dateFormatter from "../utils/dateFormatter"
 import PropTypes from "prop-types"
 
 const ProjectCardContainer = styled(Link)`
@@ -91,6 +92,11 @@ const ProjectCardTitle = styled("h3")`
   margin-top: 0.5em;
 `
 
+const ProjectCardDates = styled("div")`
+  font-weight: 600;
+  color: ${colors.grey750};
+`
+
 const ProjectCardBlurb = styled("div")`
   margin-bottom: 0.5em;
   margin-top: 0.5em;
@@ -156,12 +162,27 @@ const ProjectCardImageContainer = styled("div")`
   }
 `
 
-const ProjectCard = ({ category, title, description, thumbnail, uid }) => (
+const ProjectCard = ({
+  category,
+  title,
+  description,
+  from,
+  to,
+  ongoing,
+  thumbnail,
+  uid,
+}) => (
   <ProjectCardContainer to={`/work/${uid}`}>
     <ProjectCardContent className="ProjectCardContent">
       <ProjectCardCategory>{category[0].text}</ProjectCardCategory>
       <ProjectCardTitle>{title[0].text}</ProjectCardTitle>
+      <ProjectCardDates>
+        {dateFormatter(from)}
+        {" – "}
+        {ongoing ? "today" : dateFormatter(to)}
+      </ProjectCardDates>
       <ProjectCardBlurb>{RichText.render(description)}</ProjectCardBlurb>
+
       <ProjectCardAction className="ProjectCardAction">
         Details <span>&#8594;</span>
       </ProjectCardAction>
@@ -179,5 +200,8 @@ ProjectCard.propTypes = {
   thumbnail: PropTypes.object.isRequired,
   title: PropTypes.array.isRequired,
   description: PropTypes.array.isRequired,
+  from: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
+  ongoing: PropTypes.bool.isRequired,
   uid: PropTypes.string.isRequired,
 }

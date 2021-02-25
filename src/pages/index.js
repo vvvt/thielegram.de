@@ -6,7 +6,6 @@ import { graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
 import colors from "styles/colors"
 import dimensions from "styles/dimensions"
-import Button from "components/_ui/Button"
 import About from "components/About"
 import Layout from "components/Layout"
 import ProjectCard from "components/ProjectCard"
@@ -164,12 +163,28 @@ const RenderBody = ({ home, projects, meta }) => (
     </Hero>
     <h2>Recent Stuff</h2>
     <Section>
-      {projects.splice(0, 2).map((project, i) => (
+      {projects.sort((a, b) => {
+        const da = a.node.project_start_date;
+        const db = b.node.project_start_date;
+        const oa = a.node.project_ongoing;
+        const ob = b.node.project_ongoing;
+        if ((oa && ob) || (!oa && !ob)) {
+          return da > db ? -1 : 1
+        } else if (oa && !ob) {
+          return -1;
+        } else if (!oa && ob) {
+          return 1;
+        }
+        return 0;
+      }).filter(project => project.node.project_ongoing).map((project, i) => (
         <ProjectCard
           key={i}
           category={project.node.project_category}
           title={project.node.project_title}
           description={project.node.project_preview_description}
+          from={project.node.project_start_date}
+          to={project.node.project_end_date}
+          ongoing={project.node.project_ongoing}
           thumbnail={project.node.project_preview_thumbnail}
           uid={project.node._meta.uid}
         />
@@ -190,7 +205,6 @@ export default ({ data }) => {
   const doc = data.prismic.allHomepages.edges.slice(0, 1).pop()
   const projects = data.prismic.allProjects.edges
   const meta = data.site.siteMetadata
-  console.log(doc.node.about_links)
 
   if (!doc || !projects) return null
 
@@ -238,6 +252,9 @@ export const query = graphql`
             project_preview_thumbnail
             project_category
             project_post_date
+            project_start_date
+            project_end_date
+            project_ongoing
             _meta {
               uid
             }

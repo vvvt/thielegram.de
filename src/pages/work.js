@@ -55,12 +55,27 @@ const Work = ({ projects, meta }) => (
     <Layout>
       <WorkTitle>Work</WorkTitle>
       <>
-        {projects.map((project, i) => (
+        {projects.sort((a, b) => {
+          const da = a.node.project_start_date;
+          const db = b.node.project_start_date;
+          const oa = a.node.project_ongoing;
+          const ob = b.node.project_ongoing;
+          if (oa && ob || !oa && !ob) {
+            return da > db ? -1 : 1
+          } else if (oa && !ob) {
+            return -1;
+          } else if (!oa && ob) {
+            return 1;
+          }
+        }).map((project, i) => (
           <ProjectCard
             key={i}
             category={project.node.project_category}
             title={project.node.project_title}
             description={project.node.project_preview_description}
+            from={project.node.project_start_date}
+            to={project.node.project_end_date}
+            ongoing={project.node.project_ongoing}
             thumbnail={project.node.project_preview_thumbnail}
             uid={project.node._meta.uid}
           />
@@ -93,6 +108,9 @@ export const query = graphql`
             project_preview_thumbnail
             project_category
             project_post_date
+            project_start_date
+            project_end_date
+            project_ongoing
             _meta {
               uid
             }
