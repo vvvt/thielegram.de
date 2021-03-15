@@ -60,13 +60,14 @@ const Work = ({ projects, meta }) => (
           const db = b.node.project_start_date;
           const oa = a.node.project_ongoing;
           const ob = b.node.project_ongoing;
-          if (oa && ob || !oa && !ob) {
+          if ((oa && ob) || (!oa && !ob)) {
             return da > db ? -1 : 1
           } else if (oa && !ob) {
             return -1;
           } else if (!oa && ob) {
             return 1;
           }
+          return 0;
         }).map((project, i) => (
           <ProjectCard
             key={i}
