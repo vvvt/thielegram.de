@@ -1,0 +1,30 @@
+@use '../lib/styles/fonts.scss';
+@use '../lib/styles/typography.scss';
+@import url('https://rsms.me/inter/inter.css');
+
+
+body {
+  --maxwidthDesktop: 1100px;
+  --maxwidthTablet: 768px;
+  --maxwidthMobile: 600px;
+
+  --paddingHorizontalDesktop: 4em;
+  --paddingHorizontalTablet: 2.5em;
+  --paddingHorizontalMobile: 2em;
+
+  max-width: var(--maxwidthDesktop);
+  padding-inline: var(--paddingHorizontalDesktop);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  scrollbar-gutter: stable;
+
+  @media (max-width: var(--maxwidthTablet)) {
+    padding-inline: var(--paddingHorizontalTablet);
+  }
+
+  @media (max-width: var(--maxwidthMobile)) {
+    padding-inline: var(--paddingHorizontalMobile);
+  }
+}
