@@ -2,7 +2,7 @@
 	import './layout.scss';
 	import { page } from '$app/state';
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
-	import favicon from '$lib/assets/favicon.svg';
+	import icon from '$lib/assets/icon.svg';
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
 	import Body from './Body.svelte';
@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href={icon} />
 </svelte:head>
 <Header />
 <Body>{@render children()}</Body>
