@@ -17,6 +17,8 @@
 </footer>
 
 <style lang="scss">
+  @use '$lib/styles/colors.scss' as colors;
+
   footer {
     padding-top: 3.75em;
     padding-bottom: 3em;
@@ -43,7 +45,7 @@
       color: #74767E;
 
       &:hover {
-        color: blue;
+        color: colors.$blue-500;
       }
     }
   }

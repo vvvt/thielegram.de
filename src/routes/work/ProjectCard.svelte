@@ -40,6 +40,8 @@
 </a>
 
 <style lang="scss">
+  @use '$lib/styles/colors.scss' as colors;
+
   .card {
     display: grid;
     grid-template-columns: 4fr 7fr;
@@ -66,7 +68,7 @@
       transition: all 150ms ease-in-out;
 
       .ProjectCardAction {
-        color: blue;
+        color: colors.$blue-500;
         transition: all 150ms ease-in-out;
 
         span {
@@ -99,7 +101,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        background: blue;
+        background: colors.$blue-500;
         mix-blend-mode: multiply;
         opacity: 0;
         transition: all 150ms ease-in-out;
@@ -153,10 +155,10 @@
     }
 
     &__image {
-      background: #fafafa;
+      background: #F2F2F2;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       overflow: hidden;
       position: relative;
       padding-left: 2em;
@@ -176,7 +178,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        background: blue;
+        background: colors.$blue-500;
         mix-blend-mode: multiply;
         opacity: 0;
         transition: all 150ms ease-in-out;
@@ -185,7 +187,6 @@
       img {
         max-width: 400px;
         width: 100%;
-        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
 
         @media (max-width: var(--maxwidthTablet)) {
           max-width: unset;

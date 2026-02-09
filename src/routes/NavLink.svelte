@@ -16,6 +16,8 @@
 </li>
 
 <style lang="scss">
+  @use '$lib/styles/colors.scss' as colors;
+
   li {
 		position: relative;
 		height: 100%;
@@ -48,7 +50,7 @@
 
   li[aria-current='page'] a::after,
   a:hover::after {
-    background: blue;
+    background: colors.$blue-500;
     transition: 100ms ease-in-out background;
   }
 </style>

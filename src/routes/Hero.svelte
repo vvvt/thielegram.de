@@ -3,6 +3,8 @@
 </div>
 
 <style lang="scss">
+  @use '$lib/styles/colors.scss' as colors;
+
   .hero {
     padding-top: 2.5em;
     padding-bottom: 3em;
@@ -21,19 +23,19 @@
         transition: all 100ms ease-in-out;
 
         &:nth-of-type(1) {
-          color: blue; // blue500
+          color: colors.$blue-500;
         }
         &:nth-of-type(2) {
-          color: orange; // orange500
+          color: colors.$orange-500;
         }
         &:nth-of-type(3) {
-          color: purple; // purple500
+          color: colors.$purple-500;
         }
         &:nth-of-type(4) {
-          color: green; // green500
+          color: colors.$green-500;
         }
         &:nth-of-type(5) {
-          color: teal; // teal500
+          color: colors.$teal-500;
         }
 
         &:hover {
@@ -41,24 +43,24 @@
           transition: all 100ms ease-in-out;
 
           &:nth-of-type(1) {
-            color: blue; // blue600
-            background-color: blue; // blue200
+            color: colors.$blue-600;
+            background-color: colors.$blue-200;
           }
           &:nth-of-type(2) {
-            color: orange; // orange600
-            background-color: orange; // orange200
+            color: colors.$orange-600;
+            background-color: colors.$orange-200;
           }
           &:nth-of-type(3) {
-            color: purple; // purple600
-            background-color: purple; // purple200
+            color: colors.$purple-600;
+            background-color: colors.$purple-200;
           }
           &:nth-of-type(4) {
-            color: green; // green600
-            background-color: green; // green200
+            color: colors.$green-600;
+            background-color: colors.$green-200;
           }
           &:nth-of-type(5) {
-            color: teal; // teal600
-            background-color: teal; // teal200
+            color: colors.$teal-600;
+            background-color: colors.$teal-200;
           }
         }
       }
