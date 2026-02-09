@@ -186,10 +186,11 @@
 
       img {
         max-width: 400px;
-        width: 100%;
+        max-height: 85%;
 
         @media (max-width: var(--maxwidthTablet)) {
           max-width: unset;
+          max-height: unset;
         }
       }
     }
